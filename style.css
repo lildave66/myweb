@@ -1,0 +1,35 @@
+body { 
+    margin: 0; 
+    background-color: #87ceeb; /* Sky blue background */ 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    } 
+    #gameContainer { 
+    position: relative; 
+    width: 600px; 
+    height: 600px; 
+    border: 2px solid #333; 
+    background-color: #5c94fc; /* Ground color */ 
+    display: grid; 
+    grid-template-rows: repeat(12, 1fr); 
+    grid-template-columns: repeat(12, 1fr); 
+    gap: 2px; 
+    } 
+    /* Create individual blocks: optional if you want grid inside */ 
+    .block { 
+    width: 100%; 
+    height: 100%; 
+    background-color: #4CAF50; /* Green blocks for terrain */ 
+    } 
+    /* Player styling */ 
+    #player { 
+    position: absolute; 
+    width: 40px; 
+    height: 40px; 
+    background-color: red; /* Player color */ 
+    border: 2px solid #000; 
+    box-sizing: border-box; 
+    transition: top 0.1s, left 0.1s; 
+    }
